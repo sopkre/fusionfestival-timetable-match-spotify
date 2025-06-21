@@ -55,15 +55,15 @@ def get_spotify_likedsong_artists(client_id, client_secret):
     liked_artists = []
 
     max_number = 10000
+    print("[INFO] Start getting liked song info from Spotify...")
     for offset in np.arange(0, max_number, 50): 
-        print("[INFO] Start getting liked song info...")
         results = sp.current_user_saved_tracks(limit=50, offset=offset) # can only request max. 50 at once
         if len(results['items']) > 0:
             for idx, item in enumerate(results['items']):
                 track = item['track']
                 liked_artists += [track['artists'][0]['name']]
         else:
-            print(f"[INFO] Done! Got {len(liked_artists)} liked songs." )
+            print(f"[INFO] Done! Got {len(liked_artists)} liked songs. \n" )
             break
     
     return liked_artists
@@ -94,7 +94,7 @@ def main(url, spotify_client_id, spotify_client_secret):
     ## overlap
     overlap = set(fusion_artists) & set(liked_artists)
     
-    print(f"In both lists: {overlap}")
+    print(f"Artists at Fusion Festival and in Spotify liked songs: \n {overlap}")
 
 
 if __name__ == "__main__":
