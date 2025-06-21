@@ -1,5 +1,5 @@
 # fusionfestival-timetable-match-spotify
-Snippet to compare artists from fusion festival timetable with artists from ones spotify liked songs.
+This code snippet compares artists from the Fusion Festival timetable with artists from one's Spotify liked songs.
 
 ## Usage 
 
