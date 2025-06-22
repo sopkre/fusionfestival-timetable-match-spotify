@@ -50,7 +50,7 @@ def get_spotify_likedsong_artists(client_id, client_secret):
 
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
                                                 client_secret=client_secret,
-                                                redirect_uri="http://example.com/callback/",
+                                                redirect_uri="https://example.com/callback/",
                                                 scope="user-library-read"))
     liked_artists = []
 
