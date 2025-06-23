@@ -94,7 +94,7 @@ def main(url, spotify_client_id, spotify_client_secret):
     ## overlap
     overlap = set(fusion_artists) & set(liked_artists)
     
-    print(f"Artists at Fusion Festival and in Spotify liked songs: \n {overlap}")
+    print(f"===> Artists at Fusion Festival and in Spotify: \n {overlap}")
 
 
 if __name__ == "__main__":
