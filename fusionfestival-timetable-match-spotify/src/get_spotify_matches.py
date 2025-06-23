@@ -122,7 +122,7 @@ def main(url, spotify_client_id, spotify_client_secret, match_playlists=False):
 
 if __name__ == "__main__":
 
-    FUSION_FESTIVAL_URL = "https://timetable.fusion-festival.de/static/js/346.003d780e.chunk.js"
+    FUSION_FESTIVAL_URL = "https://timetable.fusion-festival.de/static/js/346.d8ab4121.chunk.js"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--infilename", help="yaml file with spotify client id and secret", required=True)
