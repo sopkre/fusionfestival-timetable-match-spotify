@@ -4,8 +4,10 @@ This code snippet compares artists from the Fusion Festival timetable with artis
 ## Usage 
 
 ```
-get_spotify_matches.py -i <spotify-clientinfo-yaml>
+get_spotify_matches.py [-h] -i INFILENAME (--playlists | --likes )
 ```
+
+The option ```--playlists``` uses the artists in your own created playlists and the option ```--likes``` from your liked songs.
 
 The spotify client info, i.e. the spotify client id and secret, need to be set in an input yaml-file, just follow the syntax in the provided ```example_spotify.yaml```
 
