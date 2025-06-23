@@ -9,6 +9,6 @@ get_spotify_matches.py [-h] -i INFILENAME (--playlists | --likes )
 
 The option ```--playlists``` uses the artists in your own created playlists and the option ```--likes``` from your liked songs.
 
-The spotify client info, i.e. the spotify client id and secret, need to be set in an input yaml-file, just follow the syntax in the provided ```example_spotify.yaml```
+The required INFILENAME needs your spotify client info, i.e. the spotify client id and secret, set in an input yaml-file - just follow the syntax in the provided ```example_spotify.yaml```
 
 For infos on how to prepare spotipy, check https://spotipy.readthedocs.io/en/2.25.1/ (esp. the part on SpotifyOAuth). As redirect URI, use ```https://example.com/callback/```. 
